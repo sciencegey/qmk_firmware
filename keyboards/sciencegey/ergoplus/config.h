@@ -17,30 +17,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// // wiring of each half
-// #define MATRIX_ROW_PINS { GP2, GP3, GP4, GP5, GP6, GP7, GP8 }  // Top to bottom
-// #define MATRIX_COL_PINS { GP27, GP26, GP18, GP20, GP19, GP10, GP9 }  // Left to right
-
 /* ws2812 RGB LED */
 #ifdef RGBLIGHT_ENABLE
     #define WS2812_PIO_USE_PIO1
-    // #define RGB_MATRIX_LED_COUNT 86   // Number of LEDs
-    // // #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
-    // // #define RGB_MATRIX_SPLIT
-    // #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120
     #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_ALL
     #define RGBLIGHT_DEFAULT_HUE 249
     #define RGBLIGHT_DEFAULT_SAT 255
 #endif
 
 /* I2C setup */
-// #define I2C_DRIVER I2CD0
-// #define I2C1_SCL_PIN GP1
-// #define I2C1_SDA_PIN GP0
+#define I2C_DRIVER I2CD0
+#define I2C1_SCL_PIN GP1
+#define I2C1_SDA_PIN GP0
 
 #define SPLIT_HAND_MATRIX_GRID GP8, GP9
-
-// #undef I2C_DRIVER
 
 /* Double-tap reset boot-loader entry */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
