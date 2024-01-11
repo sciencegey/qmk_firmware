@@ -21,11 +21,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MATRIX_ROW_PINS { GP2, GP3, GP4, GP5, GP6, GP7, GP8 }  // Top to bottom
 // #define MATRIX_COL_PINS { GP27, GP26, GP18, GP20, GP19, GP10, GP9 }  // Left to right
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-// #define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
-
 /* ws2812 RGB LED */
 #ifdef RGBLIGHT_ENABLE
     #define WS2812_PIO_USE_PIO1
