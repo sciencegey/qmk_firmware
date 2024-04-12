@@ -20,9 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* ws2812 RGB LED */
 #ifdef RGBLIGHT_ENABLE
     #define WS2812_PIO_USE_PIO1
-    #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_ALL
-    #define RGBLIGHT_DEFAULT_HUE 249
-    #define RGBLIGHT_DEFAULT_SAT 255
 #endif
 
 /* I2C setup */
