@@ -2,6 +2,8 @@
     "manufacturer": "sciencegey",
     "keyboard_name": "ErgoPlus",
     "maintainer": "sciencegey",
+    "tags": ["split", "RP2040", "handwire"],
+    "url": "https://www.sciencegey.com/ErgoPlus",
     "bootloader": "rp2040",
     "build": {
         "firmware_format": "uf2"
@@ -34,10 +36,16 @@
         "max_brightness": 128,
         "sleep": true,
         "split": true,
-        "split_count": [43, 43]
+        "split_count": [43, 43],
+        "layers": {
+            "enabled": true
+        }
     },
     "split": {
         "enabled": true,
+        "handedness": {
+            "matrix_grid": ["GP8", "GP9"]
+        },
         "matrix_pins": {
             "right": {
                 "cols": ["GP27", "GP26", "GP18", "GP20", "GP19", "GP10", "GP9"],
@@ -47,17 +55,25 @@
         "soft_serial_pin": "GP29",
         "transport": {
             "protocol": "serial_usart",
-            "sync_matrix_state": true,
-            "sync_modifiers": true,
-            "watchdog": true
+            "sync": {
+                "matrix_state": true,
+                "modifiers": true,
+                "layer_state": true
+            },
+            "watchdog": true,
+            "watchdog_timeout": 5000
+        },
+        "usb_detect": {
+            "enabled": true,
+            "timeout": 2000
         }
     },
-    "tags": ["split", "RP2040", "handwire"],
-    "url": "https://www.sciencegey.com/kb/ErgoPlus",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0xFBA7",
-        "vid": "0xFEED"
+        "vid": "0xFEED",
+        "force_nkro": true,
+        "suspend_wakeup_delay": 200
     },
     "ws2812": {
         "driver": "vendor",

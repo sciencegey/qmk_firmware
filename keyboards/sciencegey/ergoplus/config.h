@@ -27,19 +27,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define I2C1_SCL_PIN GP1
 #define I2C1_SDA_PIN GP0
 
-#define SPLIT_HAND_MATRIX_GRID GP8, GP9
+#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
 
 /* Double-tap reset boot-loader entry */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP17 // Specify a optional status led by GPIO number which blinks when entering the bootloader
-
-#undef FORCE_NKRO
-#define FORCE_NKRO
-
-#define NO_USB_STARTUP_CHECK
-
-#define USB_SUSPEND_WAKEUP_DELAY 200
 
 /* disable debug print */
 // #define NO_DEBUG
