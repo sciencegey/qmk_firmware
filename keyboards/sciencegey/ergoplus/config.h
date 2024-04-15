@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define WS2812_PIO_USE_PIO1
 #endif
 
-/* I2C setup */
-#define I2C_DRIVER I2CD0
-#define I2C1_SCL_PIN GP1
-#define I2C1_SDA_PIN GP0
+// /* I2C setup */
+// #define I2C_DRIVER I2CD0
+// #define I2C1_SCL_PIN GP1
+// #define I2C1_SDA_PIN GP0
 
-#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
+#define USB_VBUS_PIN GP0
 
 /* Double-tap reset boot-loader entry */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior

@@ -59,13 +59,7 @@
                 "matrix_state": true,
                 "modifiers": true,
                 "layer_state": true
-            },
-            "watchdog": true,
-            "watchdog_timeout": 5000
-        },
-        "usb_detect": {
-            "enabled": true,
-            "timeout": 2000
+            }
         }
     },
     "usb": {

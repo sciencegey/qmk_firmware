@@ -38,7 +38,8 @@ const rgblight_segment_t PROGMEM capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 
 const rgblight_segment_t PROGMEM function_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 86, HSV_OFF},       // Blank the whole keyboard
+    {0, 27, HSV_OFF},       // Blank the whole keyboard
+    {43, 27, HSV_OFF},       // Blank the whole keyboard
     {1, 1, HSV_TEAL},       // Brightness
     {2, 1, HSV_TEAL},       // Mode
     {3, 1, HSV_TEAL},       // Toggle
